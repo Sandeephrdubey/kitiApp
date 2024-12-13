@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- ViewPager2 for fragments -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpagerMain"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="56dp"
+            android:layout_height="match_parent" />
+
+        <!-- BottomNavigationView -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/new_bottom_navigation" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <!--<RelativeLayout
+        android:id="@+id/lytmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/themepurple"
+        tools:context=".activity.MainActivityG_a">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpagerMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".3dp"
+            android:layout_above="@+id/bootom_nev"
+            android:alpha=".5"
+            android:background="@color/graydark" />
+
+        <RelativeLayout
+            android:id="@+id/bootom_nev"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/themepurple"
+                android:paddingVertical="5dp"
+                android:visibility="visible"
+                app:itemIconSize="25dp"
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/botom_navigation" />
+
+
+        </RelativeLayout>
+
+
+        &lt;!&ndash;
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="100dp"
+                    android:onClick="onClickKhajano"
+                    android:visibility="visible"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/khajano" />
+        &ndash;&gt;
+       &lt;!&ndash; <ImageView
+            android:id="@+id/khajano"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:onClick="onClickKhajano"
+            android:scaleType="centerCrop"
+            android:src="@drawable/khajanoimg" />&ndash;&gt;
+    </RelativeLayout>-->
+</layout>

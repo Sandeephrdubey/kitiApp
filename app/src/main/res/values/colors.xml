@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--<color name="purpleblue">#7B4CFA</color>
+    <color name="purplepink">#B83AF3</color>-->
+
+    <color name="black_alpha_20">#33000000</color>
+    <color name="black_alpha_30">#4d000000</color>
+    <color name="black_alpha_60">#99000000</color>
+
+    <color name="me_gre">#A59DAA</color>
+    <color name="me_bg_clr">#240C2C</color>
+    <color name="me_bg_clr_light">#25152B</color>
+    <color name="match_guide_click_con">#bfffffff</color>
+    <color name="me_btn_red">#FC445C</color>
+    <color name="me_btn_pink">#CC05BE</color>
+    <color name="app_background">#180020</color>
+    <color name="themepurple">#180020</color>
+
+
+    <!--   <color name="theameblack">#1E0F1A</color>
+    <color name="themepurple">#85367B</color>-->
+    <color name="pinkmain">#F857A6</color>
+    <color name="purplepink">#FF5859</color>
+    <color name="purple">#F857A6</color>
+    <color name="cgreen2">#06D50E</color>
+    <color name="transperent">#0006D50E</color>
+    <color name="grecolor">#8A9A9393</color>
+    <color name="red">#FF2D2A</color>
+    <color name="skayblue">#50E3C2</color>
+    <color name="lavender">#FC587D</color>
+    <color name="off_white">#FCFCFC</color>
+    <color name="lite_black">#23000000</color>
+    <color name="pink">#FF689B</color>
+    <color name="lite_orange">#FF836A</color>
+    <color name="gray">#DAD9E2</color>
+    <color name="graydark">#806C87</color>
+    <!--  <color name="graydark">#AEAEAE</color>-->
+    <color name="lightblack">#463C3C3C</color>
+    <color name="localBackground">#827b92</color>
+    <color name="remoteBackground">#484258</color>
+    <color name="whitegray">#EFEFEF</color>
+    <color name="yellow">#F1BB02</color>
+    <color name="yelloww">#FFFF00</color>
+    <color name="shimmergray">#B3B3B3</color>
+    <color name="colorPrimary">#180020</color>
+    <color name="me_pink">#FD018E</color>
+    <color name="pink_chet">#FD018E</color>
+    <color name="pink_ff008f">#F3098C</color>
+
+
+
+    <color name="background_gradient_start">#FFFDE7</color>
+    <color name="background_gradient_end">#FFCC33</color>
+    <color name="button_background">#000000</color>
+    <color name="button_text">#FFFFFF</color>
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#757575</color>
+
+</resources>

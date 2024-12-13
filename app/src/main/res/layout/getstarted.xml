@@ -1,0 +1,76 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <!-- Full-Screen Background Image -->
+    <ImageView
+        android:id="@+id/fullBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/imageee" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Set up face id"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:elevation="10dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/subtitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Scan your face to verify your identity"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:elevation="10dp" />
+
+    <!-- Circular Focus on Face -->
+    <RelativeLayout
+        android:id="@+id/circularOverlay"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/circular_border"
+        android:clipToPadding="true">
+
+        <!-- Clipped Circular Focus -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imageee"
+            android:adjustViewBounds="true" />
+    </RelativeLayout>
+
+    <!-- Get Started Button -->
+    <Button
+        android:id="@+id/getStartedButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:text="Get started"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:elevation="10dp" />
+</RelativeLayout>

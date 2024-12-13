@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background"
+        android:orientation="vertical"
+        tools:context=".activity.FollowListActivityG_a">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/tvtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="Followers"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="onClickBack"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24_a"
+                app:tint="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lyttop">
+
+            <com.scwang.smart.refresh.layout.SmartRefreshLayout
+                android:id="@+id/swipe_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.scwang.smart.refresh.header.ClassicsHeader
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_srlSpinnerStyle="Translate"
+                    app:srlAccentColor="@color/grecolor"
+                    app:srlDrawableArrow="@drawable/ic_arrow"
+                    app:srlEnableLastTime="false"
+
+                    app:srlEnablePullToCloseTwoLevel="false"
+                    app:srlEnableTwoLevel="false"
+                    app:srlPrimaryColor="@color/black" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_followrs" />
+
+
+                    <io.supercharge.shimmerlayout.ShimmerLayout
+                        android:id="@+id/shimmerstatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:shimmer_auto_start="true">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <include layout="@layout/shimmer_fans" />
+
+                                <include layout="@layout/shimmer_fans" />
+
+                                <include layout="@layout/shimmer_fans" />
+
+                                <include layout="@layout/shimmer_fans" />
+
+                                <include layout="@layout/shimmer_fans" />
+
+                                <include layout="@layout/shimmer_fans" />
+
+
+                            </LinearLayout>
+
+                        </ScrollView>
+
+                    </io.supercharge.shimmerlayout.ShimmerLayout>
+
+                </RelativeLayout>
+
+
+                <com.scwang.smart.refresh.footer.ClassicsFooter
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center" />
+
+            </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt404"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/bowlanim" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/plight"
+                    android:text="No Data Found !"
+                    android:textColor="@color/pinkmain"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">kiti</string>
+
+    <string name="facebook_app_id">346907063572739</string>
+    <string name="fb_login_protocol_scheme">fb346907063572739</string>
+    <string name="dummyname">jemsbro</string>
+
+
+    <string name="entercarddetails">Please Enter Card Details</string>
+
+    <string name="desc_2">Please briefly introducation your characteristics and  to attact otsher to date you</string>
+    <string name="dec_1">Please upload your picture of real people and the first picture will be used as the cover of the dating hosts list.(You can not upload landscap photos,physical,animal photos or comics,and blurred images.)</string>
+    <string name="video_type_match">Random Matching</string>
+    <string name="match_guide_click">Tap the screen to start</string>
+    <string name="both">Both</string>
+    <string name="policytext">You have to be 18 years older to use Kiti App. We ask everyone on Kiti to Be kind and respectful, so every person can have a greet experience. We Value Your Privacy and Personal information. by Using  Kiti you are agreeing our Terms &amp; Condition and Privacy Policy.</string>
+    <string name="email">contact@kitiindia.in</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

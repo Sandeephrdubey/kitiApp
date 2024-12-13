@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "413507304658",
+    "project_id": "kiti-f0e40",
+    "storage_bucket": "kiti-f0e40.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413507304658:android:29d660a1fe27a02998410b",
+        "android_client_info": {
+          "package_name": "com.wawe.user"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmu7-vlYqJt1gpUU8Tz3MGKFPLxqNiy1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

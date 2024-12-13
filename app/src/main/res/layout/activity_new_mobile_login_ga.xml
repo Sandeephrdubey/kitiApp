@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:padding="11dp"
+        tools:context=".user.activity.ComplainActivity">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/kii"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pbold"
+                android:text="English"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:onClick="onClickBack"
+                android:padding="7sp"
+                android:src="@drawable/ic_baseline_close_24_a"
+                app:tint="@color/white" />
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginTop="20sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pmidum"
+                        android:text="Login In to Enter Your Profile"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:background="@drawable/rounded_border"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etCountry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/pmidum"
+                        android:hint="+91"
+                        android:paddingHorizontal="10dp"
+                        android:singleLine="true"
+                        android:text="+91"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/purplepink"
+                        android:textSize="15sp" />
+
+
+                    <EditText
+                        android:id="@+id/etNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/pmidum"
+                        android:hint="Enter Your Mobile"
+                        android:inputType="phone"
+                        android:paddingLeft="20sp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:maxLength="10"
+                        android:textColorHint="@color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/lyt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <!-- <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="20sp"
+                         android:orientation="vertical">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:fontFamily="@font/pmidum"
+                             android:text="Enter Password "
+                             android:textColor="@color/white"
+                             android:textSize="14sp" />
+
+
+                         <EditText
+                             android:id="@+id/etPwd1"
+                             android:layout_width="match_parent"
+                             android:layout_height="50dp"
+                             android:background="@drawable/bg_greaden5dp"
+                             android:backgroundTint="@color/white"
+                             android:fontFamily="@font/pmidum"
+                             android:hint="Enter your password"
+                             android:paddingLeft="20sp"
+                             android:singleLine="true"
+                             android:textColor="@color/black"
+                             android:textColorHint="@color/purplepink"
+                             android:textSize="15sp" />
+                     </LinearLayout>
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="20sp"
+                         android:orientation="vertical">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:fontFamily="@font/pmidum"
+                             android:text="Re Type Password "
+                             android:textColor="@color/white"
+                             android:textSize="14sp" />
+
+
+                         <EditText
+                             android:id="@+id/etPwd2"
+                             android:layout_width="match_parent"
+                             android:layout_height="50dp"
+                             android:background="@drawable/bg_greaden5dp"
+                             android:backgroundTint="@color/white"
+                             android:fontFamily="@font/pmidum"
+                             android:hint="Re Type Password "
+                             android:paddingLeft="20sp"
+                             android:singleLine="true"
+                             android:textColor="@color/black"
+                             android:textColorHint="@color/purplepink"
+                             android:textSize="15sp" />
+                     </LinearLayout>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/pmidum"
+                            android:text="Enter Your Name "
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+
+                        <EditText
+                            android:id="@+id/etName"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_greaden5dp"
+                            android:backgroundTint="@color/white"
+                            android:fontFamily="@font/pmidum"
+                            android:hint="Enter your Name"
+                            android:paddingLeft="20sp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/purplepink"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/loginbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:alpha="1"
+                    android:background="@drawable/bg_greadentround_a"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/pbold"
+                    android:onClick="submitButtonClick"
+                    android:paddingHorizontal="40dp"
+                    android:paddingVertical="8dp"
+                    android:text="sign Up/Log in with phone"
+                    android:textColor="@color/pink_ff008f"
+                    android:textSize="16dp" />
+
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvresend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/pbold"
+                        android:onClick="onClickResendOTP"
+                        android:text="R E S E N D"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvTimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/pbold"
+                        android:text="15:77"
+                        android:textColor="@color/white"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/google"
+                    android:scaleType="centerCrop" />
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/com_facebook_button_icon"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:alpha=".7"
+                android:fontFamily="@font/plight"
+                android:text="If you want to become host then contact us"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/plight"
+                android:text="@string/email"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/pd"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loder"
+            app:lottie_speed="2.5" />
+    </RelativeLayout>
+</layout>
